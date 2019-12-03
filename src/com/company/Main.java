@@ -10,10 +10,14 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) throws IOException {
+        FileWriter fileWriter=new FileWriter("File.txt");
 FileWriter fileWriter1=new FileWriter("Song.txt");
 FileReader fileReader=new FileReader("File.txt");
 Scanner sc=new Scanner(fileReader);
+fileWriter.close();
+fileWriter1.close();
     }
+
 }
 
 
